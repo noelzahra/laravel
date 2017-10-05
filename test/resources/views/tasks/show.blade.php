@@ -78,9 +78,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Hello {{ $name }}
-                </div>
+                <h3>Task {{ $task->id }}: {{ $task->body }}</h3>
 
                 <div class="links">
                     <a href="/">Welcome</a>

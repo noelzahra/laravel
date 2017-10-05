@@ -12,16 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('welcome')->with('name', 'Scott');
+    $name = 'Scott';
+    //php built-in func: compact('name') for ['name' => $name]
+    return view('welcome', [ 'name' => $name ]); 
 });
 
-Route::get('/contact', function () {
-    $tasks = [
-        "Get laravel books",
-        "Read the books",
-        "test coding"
-    ];
-    return view('contact', compact('tasks'));
+// Route::get('/contact', function(){
+//     $tasks = [
+//         'Start reading Laravel book',
+//         'Do the laracsts tutorial',
+//         'Code some test laravel apps',
+//         'Enjoy the results'
+//     ];
+//     return view('contact', compact('tasks'));
+// });
+
+//Populate Tasks collection from db
+Route::get('/tasks', function() {
+    $tasks = DB::table('tasks')->latest()->get();
+
+    return view('tasks.index', ['tasks' => $tasks]);
+});
+
+//Get one task by id
+Route::get('/tasks/{task}', function($id) {
+    $task = DB::table('tasks')->find($id);
+
+    return view('tasks.show', ['task' => $task]);
 });
 
 Route::get('/about', function() {
