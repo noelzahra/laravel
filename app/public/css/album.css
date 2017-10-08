@@ -1,0 +1,109 @@
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  background-image: url('../images/jumbotron_background.jpg');
+}
+
+.jumbotron p {
+  color: #eef8ff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+h2.jumbotron-heading {
+  font-family: 'Lato', sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #fda222;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  min-height: 10rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ffffff;
+}
+
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+.form-title {
+  margin-bottom: 2rem;
+}
+/* sidebar css */
+.sidebar-module {
+  width: 100%;
+  padding: 1rem;
+  /*margin: 0 -1rem 1rem;*/
+}
+.sidebar-module-inset {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: .25rem;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-module ol.list-unstyled {
+  font-size: 0.8rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #fda222;
+}
+
+footer .links > a {
+  color: #3577db;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer p {
+  margin: .25rem 0rem;
+  color: #eef8ff;
+}

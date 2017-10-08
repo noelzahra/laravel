@@ -3,12 +3,6 @@
 use App\Task;
 
 
-Route::get('/', function () {
-    $name = 'Scott';
-    //php built-in func: compact('name') for ['name' => $name]
-    return view('welcome', [ 'name' => $name ]); 
-});
-
 // Route::get('/contact', function(){
 //     $tasks = [
 //         'Start reading Laravel book',
@@ -37,10 +31,12 @@ Route::get('/', function () {
 //     return view('tasks.show', ['task' => $task]);
 // });
 
+//Passing views from Controller
+
+Route::get('/', 'HomeController@index');
+
 Route::get('/tasks', 'TasksController@index');
 
 Route::get('/tasks/{task}', 'TasksController@show');
 
-Route::get('/about', function() {
-    return view('about');
-});
+Route::get('/about', 'AboutController@index');

@@ -5,18 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Task;
 
-
 class TasksController extends Controller
 {
     public function index() {
+        
         $tasks = Task::all();
-
-        return view('tasks.index', compact('tasks'));
+        
+        return view('tasks.index', ['tasks' => $tasks]);
     }
 
-    public function show($id) {
-        $task = Task::find($id);
+    public function show(Task $task) {
 
-        return view('tasks.show', compact('task'));
+        //$task = Task::find($id); //passing id as an arg in show method
+
+        return view('tasks.show', ['task' => $task]);
     }
 }

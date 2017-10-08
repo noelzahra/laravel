@@ -9,7 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
         <!-- Styles -->
         <style>
             html, body {
@@ -49,6 +50,10 @@
                 font-size: 84px;
             }
 
+            .links {
+                margin-top: 50px;
+            }
+            
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -79,14 +84,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Latest from Laravel
+                    Hello {{ $name }}
                 </div>
 
                 <div class="links">
                     <a href="/">Welcome</a>
-                    <a href="about">About</a>
-                    <a href="latest">Latest</a>
-                    <a href="contact">Contact</a>
+                    <a href="/about">About</a>
+                    <a href="/tasks">Tasks</a>
+                    <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>

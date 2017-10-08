@@ -1,95 +1,23 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    About Us
-                </div>
-
-                <div class="links">
-                    <a href="/">Welcome</a>
-                    <a href="about">About</a>
-                    <a href="latest">Latest</a>
-                    <a href="contact">Contact</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@section('content')
+    <h2>About the Laravel framework</h2>
+    <p>The Laravel framework has a few system requirements.
+        Of course, all of these requirements are satisfied by the 
+        Laravel Homestead virtual machine, so it's highly 
+        recommended that you use Homestead as your local Laravel 
+        development environment.
+    </p>
+    <p>
+        However, if you are not using Homestead, you will need to 
+        make sure your server meets the following requirements:
+    </p>
+    <ul>
+        <li>PHP >= 7.0.0</li>
+        <li>OpenSSL PHP Extension</li>
+        <li>PDO PHP Extension</li>
+        <li>Mbstring PHP Extension</li>
+        <li>Tokenizer PHP Extension</li>
+        <li>XML PHP Extension</li>
+    </ul>
+@endsection
