@@ -17,6 +17,8 @@ html, body {
   margin-bottom: 0;
   background-color: #fff;
   background-image: url('../images/jumbotron_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .jumbotron p {
@@ -39,7 +41,7 @@ h2.jumbotron-heading {
 }
 
 .album {
-  min-height: 10rem; /* Can be removed; just added for demo purposes */
+  min-height: 10rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #ffffff;

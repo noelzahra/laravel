@@ -5,10 +5,10 @@
             <div class="col-lg-12 text-center">
                 <div class="links">
                     <a href="/">Home</a>
-                    <a href="/posts/">Posts</a>
+                    <a href="/">Posts</a>
                     <a href="/posts/create/">Create a post</a>
                     <a href="/about/">About</a>
-                    <a href="https://github.com/laravel/laravel">Contact us</a>
+                    <a href="/contact/">Contact us</a>
                 </div>
                 <p>A simple app created with the Laravel framework and vue.js for front-end interactions.</p>
             </div>
